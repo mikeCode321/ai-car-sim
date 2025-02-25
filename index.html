@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Self Driving Car</title>
+  </head>
+  <body>
+    <canvas id="myCanvas"></canvas>
+    <div id="verticalButtons">
+      <button onclick="save()">Save</button>
+      <button onclick="discard()">Discard</button>  
+      <input id="mutationRate" type="text" name="mutationRate" placeholder="Mutation Rate">
+    </div>
+
+    <div id="instructions">
+          <div id="instruction-box">
+            <h2>How to Use the Self Driving Car Simulation</h2>
+            <p><strong>1.a Controls:</strong> Use the 'Save' button to save the car that goes furthest in the simulation.</p>
+            <p><strong>1.b Controls:</strong> Use the 'Discard' button to discard the current state.</p>
+            <p><strong>2.a Mutation Rate:</strong> The closer to 0, the more similar the weights are to the 'best' car. <b>Press 'Enter' to save input.</b></p>
+            <p><strong>2.b Mutation Rate:</strong> The further from 0, the more sporadic the mutations are for the weights of the off-spring in relation to the 'best' car. <b>Press 'Enter' to save input.</b>.</p>
+            <p><strong>3 Simulation:</strong> <b>Refresh the page</b> and repeat until at least one car makes it past all obstacles.</p>
+            <p>Happy Tinkering!</p>
+          </div>
+          <button id="toggleInstructions" onclick="toggleInstructions()">Hide Instructions</button>
+      </div>
+  
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

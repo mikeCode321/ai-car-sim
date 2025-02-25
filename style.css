@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  background: darkgray;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#verticalButtons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+input[name="mutationRate"]:focus {
+  outline: none;
+}
+
+input[name="mutationRate"] {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px 7px 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: yellow;
+}
+
+#myCanvas {
+  background: lightgray;
+}
+
+#networkCanvas {
+  background: black;
+}
+
+/* Instructions Box */
+#instructions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 300px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  display: block; /* Start as hidden */
+  z-index: 100;
+}
+
+/* Instruction Box Header */
+#instruction-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #f1c40f; /* Yellow for header */
+}
+
+/* Instruction Box Content */
+#instruction-box p {
+  margin: 10px 0;
+}
+
+#instruction-box strong {
+  color: #3498db; /* Blue color for important terms */
+}
+
+#instruction-box b {
+  color: #f44545; /* Blue color for important terms */
+}
+
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px 7px 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: yellow;
+}
+
+/* Hide/Unhide Button inside the instructions box */
+#toggleInstructions {
+  margin-top: 15px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#toggleInstructions:hover {
+  background-color: #2980b9;
+}
